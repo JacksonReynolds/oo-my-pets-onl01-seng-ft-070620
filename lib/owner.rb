@@ -24,6 +24,10 @@ class Owner
     Dog.all.select {|dog| dog.owner == self}
   end #cats
 
+  def buy_cat(cat)
+
+  end #buy_cat
+
 #CLASS METHODS
   def self.all
     @@all
