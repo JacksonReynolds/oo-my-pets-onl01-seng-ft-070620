@@ -28,6 +28,10 @@ class Owner
       new_cat = Cat.new(cat, self)
   end #buy_cat
 
+  def buy_dog(dog)
+      new_dog = Dog.new(dog, self)
+  end #buy_cat
+
 #CLASS METHODS
   def self.all
     @@all
