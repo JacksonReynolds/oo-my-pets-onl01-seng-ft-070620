@@ -1,3 +1,10 @@
 class Owner
-  # code goes here
+  attr_reader :species, :name
+  @@all = []
+
+  def initialize()
+    @species = 'human'
+  end #initialize
+
+
 end
