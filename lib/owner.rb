@@ -29,6 +29,7 @@ class Owner
       new_cat = Cat.new(cat, self)
     else
       cat.owner = self
+    end #if
   end #buy_cat
 
 #CLASS METHODS
