@@ -9,5 +9,10 @@ class Cat
     @name = name
     @owner = owner
     @mood = 'nervous'
+    @@all << self
   end #initialize
+
+  def self.all
+    @@all
+  end #self.all
 end
