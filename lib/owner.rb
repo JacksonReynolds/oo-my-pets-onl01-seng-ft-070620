@@ -1,3 +1,6 @@
+require 'cat.rb'
+require 'dog.rb'
+
 class Owner
   attr_reader :species, :name
   @@all = []
