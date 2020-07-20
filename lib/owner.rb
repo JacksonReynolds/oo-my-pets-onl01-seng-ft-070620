@@ -25,10 +25,7 @@ class Owner
   end #cats
 
   def buy_cat(cat)
-    if !cat
       new_cat = Cat.new(cat, self)
-    else
-      cat.owner = self
     end #if
   end #buy_cat
 
