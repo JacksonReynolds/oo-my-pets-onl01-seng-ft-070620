@@ -5,6 +5,7 @@ class Owner
   attr_reader :species, :name
   @@all = []
 
+#INSTANCE METHODS
   def initialize(name)
     @name = name
     @species = 'human'
@@ -15,6 +16,11 @@ class Owner
     "I am a #{self.species}."
   end #say_species
 
+  def cats
+    Cats.select {|cat| cat.owner == self}
+  end #cats
+
+#CLASS METHODS
   def self.all
     @@all
   end #self.all
