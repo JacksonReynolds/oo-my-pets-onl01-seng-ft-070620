@@ -40,6 +40,14 @@ class Owner
     Cat.all.each {|cat| cat.mood = 'happy'}
   end #feed_cats
 
+  def sell_pets
+    cats.each do |cat| 
+      cat.owner = nil
+      cat.mood = 'nervous'
+    end #do
+    dogs.each {|dog| dog.owner = nil}
+  end
+
 #CLASS METHODS
   def self.all
     @@all
