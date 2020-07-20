@@ -17,11 +17,11 @@ class Owner
   end #say_species
 
   def cats
-    Cat.select {|cat| cat.owner == self}
+    Cat.all.select {|cat| cat.owner == self}
   end #cats
 
   def dogs
-    Dog.select {|dog| dog.owner == self}
+    Dog.all.select {|dog| dog.owner == self}
   end #cats
 
 #CLASS METHODS
