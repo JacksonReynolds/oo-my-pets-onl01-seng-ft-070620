@@ -6,5 +6,6 @@ class Owner
     @species = 'human'
   end #initialize
 
-
+  def say_species
+    "I am a #{self.species}."
 end
